@@ -1,0 +1,68 @@
+// Файл: promo.scss (или любой другой, где содержатся эти стили)
+
+@use '../base/variables' as variables; // Если у вас есть файл с переменными
+
+.promo {
+    min-height: 650px;
+    padding: 21px 0 93px 0;
+    background: url(../img/main.jpg) center / cover no-repeat;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 90px;
+        color: #ffffff;
+    }
+
+    &__header {
+        color: #ffffff; // Пример использования переменной из 'variables'
+        font-size: 42px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 42px;
+    }
+
+    &__subheader {
+        margin-top: 17px;
+        color: #ffffff; // Пример использования переменной из 'variables'
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    &__icons {
+        margin-top: 65px;
+        width: 425px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__icon {
+        width: 108px;
+        text-align: center;
+        color: #ffffff; // Пример использования переменной из 'variables'
+        font-size: 14px;
+        font-weight: 500;
+
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__link {
+        color: #ffffff; // Пример использования переменной из 'variables'
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 18px;
+
+        a {
+            color: #ffffff; // Пример использования переменной из 'variables'
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+    }
+}
